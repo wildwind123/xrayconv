@@ -29,10 +29,10 @@ func main() {
 		socksPort, _ = strconv.Atoi(os.Args[4])
 	}
 
-	file, err := conv.ConvertURIJSON(host, port, socksPort, uri)
+	res, err := conv.ConvertURIJSON(host, port, socksPort, uri)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 		os.Exit(1)
 	}
-	fmt.Println(file)
+	fmt.Println(res)
 }
