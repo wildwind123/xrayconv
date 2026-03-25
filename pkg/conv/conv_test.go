@@ -8,7 +8,7 @@ func TestConv(t *testing.T) {
 	host := "127.0.0.1"
 	port := 10809
 	socksPort := 10808
-	url := "trojan://HsQONAL727@host.org:21532?type=tcp&security=reality&pbk=p7R9bWo5SA5-tGN0Q5fpE1_qCUh80RyNjHoC1cBZKwc&fp=chrome&sni=cloud.mail.ru&sid=e6fbc395f5ab69&spx=%2F#Finland-vpnsafe2"
+	url := "trojan://HsQONAL727@host.org:21532?type=tcp&security=reality&pbk=p7R9bWo5SA5-tGN0Q5fpE1_qCUh80RyNjHoC1cBZKwc&fp=chrome&sni=cloud.mail.ru&sid=e6fbc395f5ab69&spx=%2F"
 	r, err := ConvertURIJSON(host, port, socksPort, url)
 
 	if err != nil {
